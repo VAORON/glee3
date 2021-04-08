@@ -3,8 +3,79 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 40px 0;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+  display: flex;
+  align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+
+  &__link--one,
+  &__link--two,
+  &__link--three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link--one,
+  &__link--three {
+    width: 51px;
+    height: 52px;
+    border-radius: 50%;
+  }
+
+  &__link--one {
+    background-color: #edf1f4;
+    margin-right: 25px;
+  }
+
+  &__link--two {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fcd7b6;
+    margin-right: 25px;
+    width: 178px;
+    height: 51px;
+    border-radius: 25px;
+  }
+
+  &__link--three {
+    background-color: #a3bbc8;
+  }
+
+  &__num {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -9px;
+    right: -9px;  
+  }
+}
 
 
 @import 'media';
