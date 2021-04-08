@@ -3,4 +3,6 @@ $(function(){
     dots: true,
     arrows: false
   });
+
+  mixitup = require('.products__items');
 });
